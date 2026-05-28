@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: "Plus Jakarta Sans", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --background: 210 30% 97%;
+    --foreground: 218 60% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 218 60% 12%;
+    --primary: 220 79% 25%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 178 100% 36%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 34 93% 54%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 210 20% 94%;
+    --muted-foreground: 218 20% 46%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 220 79% 25%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
